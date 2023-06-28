@@ -1,0 +1,1386 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url(http://www.transparenttextures.com/patterns/shattered-dark.png);
+}
+
+button{
+	transition: 0.2s ease-in;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+a:hover {
+  color: #f67280;
+}
+
+.whole {
+  background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+  width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.button_style {
+  margin-left: 10px !important;
+  margin-right: 10px;
+}
+
+.centerTable {
+  margin: 0px auto;
+}
+
+h2 {
+  color: #3f51b5;
+}
+
+.left {
+  text-align: left;
+}
+
+/* -----------
+  * HEADER *
+-----------  */
+
+.manageProfile{
+  top: 200px;
+  right: 350px;
+  position: absolute;
+  background-color: #f67280;
+  border: none;
+  font-weight: 500;
+  width: 150px;
+  color: white;
+  padding: 7px 0px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.manageProfile:hover {
+  background-color: #355c7d;
+}
+
+.header {
+  font-family: "Arvo", serif;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.header .upperheader {
+  padding: 16px 0 13px 0;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header .upperheader .headericon {
+  margin-left: 1050px;
+  width: 170px;
+  padding: 10px 0 0;
+}
+
+.header .upperheader .headericon a {
+  font-weight: 500;
+  color: #c06c84;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+.header .upperheader .headericon a:hover {
+  color: #f67280;
+}
+
+.header .mainheader {
+  height: 180px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.header .mainheader img {
+  margin: 55px auto 0 130px;
+}
+
+.header .rainbow {
+  width: 100%;
+  height: 4px;
+  background-repeat: repeat-x;
+  background: linear-gradient(
+    to right,
+    #eb5252,
+    #f78f2f,
+    #f4c151,
+    #75d850,
+    #6284ff,
+    #eb5252
+  );
+  animation: rainbow 10s linear infinite;
+  background-size: 200% 100% !important;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 800% 0;
+  }
+}
+
+/* -----------
+  * NAVBAR *
+-----------  */
+
+.header .navbar{
+  height: 50px;
+  background: #c06c84;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+.header .navbar ul{
+  float: left;
+  margin-left: 80px;
+}
+.header .navbar ul li{
+  transition: .3s linear; 
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  width:100px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  background: #c06c84;
+  height: 50px;
+}
+
+.header .navbar ul li:hover,
+.header .navbar ul li:active{
+  background: #f67280;
+}
+
+.header .navbar ul li.panel{
+  width:180px;
+}
+.header .navbar ul li a{
+  font-family:'Lato';
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 13px;
+  color: white;
+  display: block;
+  font-size: 16.5px;
+  text-decoration: none;
+}
+
+.header .navbar ul ul{
+  opacity: 0;
+  visibility: hidden;
+}
+.header .navbar ul li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+.header .navbar ul ul li{
+  position: relative;
+  top: 12px;
+  right: 112px;
+  width: 180px;
+  border: 1px solid #f67280;
+  border-top: none;
+  border-radius: 3px;
+}
+
+.header .navbar ul ul li.first{
+  border-top: 1px solid #f67280;
+}
+
+/* -----------
+  * LOGIN *
+-----------  */
+
+.login {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  border-width: 2px;
+  width: 500px;
+  height: 500px;
+  padding: 75px 50px 0 50px;
+  margin: 15vh auto;
+}
+
+.login h3 {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.login .form-group {
+  margin: 15px 0;
+}
+
+.login button {
+  background-color: #f67280;
+  border: none;
+  margin: 20px auto 25px;
+  font-weight: 500;
+  font-size: 18px;
+  width: 150px;
+}
+
+.login button:hover {
+  background-color: #c06c84;
+}
+
+/* -----------
+  * REGISTER *
+-----------  */
+
+.register {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  border-width: 2px;
+  width: 750px;
+  height: 780px;
+  padding: 80px 90px 0;
+  margin: 15vh auto;
+}
+
+.register h3 {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.register .form-group {
+  margin: 15px 0;
+}
+
+.register .remember-me {
+  margin: 15px auto 0;
+}
+
+.register button {
+  margin: 20px auto;
+  height: 50px;
+  width: 250px;
+  background-color: #f67280;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.register button:hover {
+  background-color: #c06c84;
+}
+
+/* -----------
+  * Table *
+-----------  */
+
+.tableFull {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto 10vh;
+}
+
+.tableFull th {
+  padding: 15px;
+  background-color: #f67280;
+  color: white;
+}
+
+.tableFull th.leftHeading1 {
+  width: 30%;
+  padding: 15px 15px;
+  background-color: #fbd0d2;
+  color: #C25964;
+}
+
+.tableFull th.leftHeading2 {
+  width: 30%;
+  padding: 15px 15px;
+  background-color: #fac7c9;
+  color: #C25964;
+}
+
+.tableFull td {
+  padding: 10px;
+}
+
+.tableFull tr:nth-child(odd){
+  background-color: white;
+}
+
+.tableFull tr:nth-child(even) {
+  background-color: #fde8e9;
+}
+
+/* -----------
+  * Field List *
+-----------  */
+
+.fieldList {
+  width: 850px;
+}
+
+.field .fcol1 {
+  width: 70%;
+}
+
+.field .fcol2 {
+  width: 15%;
+  text-align: right;
+}
+
+.field .fcol3 {
+  width: 15%;
+  text-align: left;
+}
+
+.field button {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	font-size: 16px;
+	border-style: none;
+
+}
+
+.field button:hover{
+	color:#c06c84;
+}
+
+.category .catcol1 {
+  width: 70%;
+}
+
+.category button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  color: #f67280;
+  border-style: none;
+}
+
+.category button:hover {
+  color: #c06c84;
+
+}
+
+.addField, .addArticle, .addUser{
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	background-color: #f67280;
+	color:white;
+	border: none;
+	border-radius : 5px;
+	padding: 8px 12px;
+	font-weight: 500;
+  font-size: 16px;
+}
+
+.addField:hover, .addArticle:hover, .addUser:hover {
+	background-color: #c06c84;
+}
+
+.addField i, .addArticle i, .addUser i{
+	font-size: 20px;
+	margin: 5px;
+}
+
+/* -----------
+  * User List *
+-----------  */
+
+.userList{
+  width: 900px;
+}
+
+.userList .dcolFirst{
+  width: 3%;
+}
+
+.userList .dcolLast{
+  width: 2%;
+}
+
+.userList .dcol1{
+  width: 10%;
+}
+
+.userList .dcol2{
+  width: 25%;
+
+}
+
+.userList .dcol3{
+  width: 30%;
+}
+
+.userList .dcolbut{
+  width: 10%;
+}
+
+.userList .dcolbut button {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  color: #f67280;
+  border-style: none;
+}
+.userList .dcolbut button:hover {
+  color: #c06c84;
+
+}
+
+/* --------------
+  * Article List *
+--------------  */
+
+.articleList{
+  width: 1250px;
+  font-size: 15px;
+}
+
+.articleList .tableFull td {
+  padding: 10px 0;
+}
+
+.articleList .tableFull td.dcolbut {
+  padding: 10px 8px;
+}
+
+.articleList .dcolbut button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f67280;
+  border-style: none;
+}
+.articleList .dcolbut button:hover {
+  color: #c06c84;
+
+}
+
+.articleList .dcolbut button i {
+  font-size: 16px;
+}
+
+.addArticle {
+  font-size: 15px;
+}
+
+/* --------------
+  * Manage Editors *
+--------------  */
+
+.manageEditors{
+  width: 900px;
+  margin-top: 10vh;
+}
+
+.manageEditors .tableFull td {
+  padding: 10px 0;
+  width:25%;
+}
+
+.manageEditors button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f67280;
+  border-style: none;
+}
+.manageEditors button:hover {
+  color: #c06c84;
+
+}
+
+.manageEditors button i {
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+
+/* ----------------
+  * Create Article *
+-----------------  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.createArticle {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  border-width: 2px;
+  width: 750px;
+  height: 730px;
+  padding: 80px 90px 0;
+  margin: 15vh auto;
+}
+
+.createArticleAdmin {
+  height: 950px;
+}
+
+.createArticle h3 {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.createArticle .form-group {
+  margin: 15px 0;
+}
+
+.createArticle .remember-me {
+  margin: 15px auto 0;
+}
+
+.createArticle button {
+  margin: 20px auto;
+  height: 50px;
+  width: 250px;
+  background-color: #f67280;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.createArticle button:hover {
+  background-color: #c06c84;
+}
+/* ------------------------
+  * Article Under Review *
+------------------------  */
+
+.underReview {
+  margin-top: 10vh;
+  width: 800px;
+}
+
+/* ----------------
+  * Assign Article *
+-----------------  */
+
+.assignArticle {
+  margin-top: 10vh;
+  width: 900px;
+}
+
+.assignArticle .tableFull td {
+  border:#eccdcf 1px solid;
+  padding: 10px 0;
+}
+
+.assignArticle .tableFull td.first {
+  width:30%
+}
+
+.assignArticle .tableFull td.fieldCat {
+  width:20%;
+}
+
+.assignArticle .tableFull td.dcolbut1 {
+  width:15%;
+}
+
+.assignArticle .tableFull td.dcolbut2 {
+  width:15%;
+}
+
+.assignArticle button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f67280;
+  border-style: none;
+}
+.assignArticle button:hover {
+  color: #c06c84;
+
+}
+.assignArticle button i {
+  font-size: 16px;
+	margin: 5px 8px 5px 0;
+}
+
+.articleDetails {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto 10vh;
+  font-size: 20px;
+}
+
+.articleDetails td {
+  padding: 0.8vh;
+  border: 2px solid #fbd0d6;
+}
+
+.articleDetails tr:nth-child(odd){
+  background-color: white;
+}
+
+.articleDetails tr:nth-child(even) {
+  background-color: #fcdee2;
+}
+
+/* ------------------------
+  * Manage Articles Editor *
+------------------------  */
+.manageArticlesEditor {
+  margin-top: 10vh;
+  width: 900px;
+}
+
+.manageArticlesEditor .tableFull td {
+  border:#eccdcf 1px solid;
+  padding: 10px 0;
+}
+
+.manageArticlesEditor .tableFull td.first {
+  width:30%
+}
+
+.manageArticlesEditor .tableFull td.fieldCat {
+  width:20%;
+}
+
+.manageArticlesEditor .tableFull td.dcolbut1 {
+  width:10%;
+}
+
+.manageArticlesEditor .tableFull td.dcolbut2 {
+  width:10%;
+}
+
+.manageArticlesEditor .tableFull td.dcolbut3 {
+  width:10%;
+}
+
+.manageArticlesEditor button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f67280;
+  border-style: none;
+}
+.manageArticlesEditor button:hover {
+  color: #c06c84;
+
+}
+.manageArticlesEditor button i {
+  font-size: 16px;
+	margin: 5px 8px 5px 0;
+}
+
+
+/* ------------------------
+  * Manage Articles Reviewer *
+------------------------  */
+.manageArticlesReviewer{
+  margin-top: 10vh;
+  width: 900px;
+}
+
+.manageArticlesReviewer .tableFull td {
+  border:#eccdcf 1px solid;
+  padding: 10px 0;
+}
+
+.manageArticlesReviewer .tableFull td.first {
+  width:30%
+}
+
+.manageArticlesReviewer .tableFull td.fieldCat {
+  width:20%;
+}
+
+.manageArticlesReviewer .tableFull td.dcolbut1 {
+  width:10%;
+}
+
+.manageArticlesReviewer .tableFull td.dcolbut2 {
+  width:10%;
+}
+
+.manageArticlesReviewer .tableFull td.dcolbut3 {
+  width:10%;
+}
+
+.manageArticlesReviewer button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f67280;
+  border-style: none;
+}
+.manageArticlesReviewer button:hover {
+  color: #c06c84;
+
+}
+.manageArticlesReviewer button i {
+  font-size: 16px;
+	margin: 5px 8px 5px 0;
+}
+
+/* --------
+  * Browse *
+---------  */
+
+.browse{
+  width: 1050px;
+  margin-top: 10vh;
+}
+
+.browse input, .articleList input{
+  width: 550px;
+  margin: 0 auto;
+}
+
+/* -----------
+  * POPUP *
+-----------  */
+
+/* -------------
+  * View User *
+-------------  */
+
+.viewUser {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewUser-inner {
+  position: relative;
+  padding: 10vh 120px 0;
+  /* padding: 100px 120px 0; */
+  width: 100%;
+  max-width: 850px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.viewUser-inner .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border-style: none;
+  background-color: white;
+}
+
+.viewUser-inner .close-btn:hover {
+  color: hsl(208, 40%, 30%);
+}
+
+.viewUser-inner .close-btn i{
+  font-size: 30px;
+}
+
+.viewUser-inner .editButton{
+  border-style: none;
+  background: none;
+  color:#355c7d;
+}
+
+.viewUser-inner .editButton:hover{
+  color:#eb5252;
+}
+
+.profileDetails {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto 10vh;
+  font-size: 20px;
+}
+
+.profileDetails td {
+  padding: 0.8vh;
+  border: 2px solid #ddd;
+}
+
+.profileDetails tr:nth-child(odd){
+  background-color: white;
+}
+
+.profileDetails tr:nth-child(even) {
+  background-color: hsl(208, 40%, 90%);
+}
+
+/* ---------------
+  * Assign Editor *
+----------------  */
+
+.assignEditor {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assignEditor-inner {
+  position: relative;
+  padding: 8vh 120px 0;
+  height: 500px;
+  width: 100%;
+  max-width: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.assignEditor-inner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  border-style: none;
+  background-color: white;
+  color: hsl(208, 40%, 30%);
+}
+
+.assignEditor-inner .close-btn:hover {
+  background-color: white;
+  color:#f67280;
+}
+
+.assignEditor-inner .close-btn i{
+  font-size: 30px;
+}
+
+.assignEditor-inner button{
+  margin-top: 15px;
+  padding: 12px 20px;
+  text-align: center;
+  color:white;
+  background-color: #f67280;
+  border-radius: 5px;
+}
+
+.assignEditor-inner button:hover{
+  color:white;
+  background-color: #C25964;
+}
+
+.assignEditor-inner th {
+  font-size: 17px;
+}
+
+
+/* ---------------
+  * Assign Reviewer *
+----------------  */
+
+.assignReviewer {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assignReviewer-inner {
+  position: relative;
+  padding: 8vh 120px 0;
+  height: 700px;
+  width: 100%;
+  max-width: 650px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.assignReviewer-inner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  border-style: none;
+  background-color: white;
+  color: hsl(208, 40%, 30%);
+}
+
+.assignReviewer-inner .close-btn:hover {
+  background-color: white;
+  color:#f67280;
+}
+
+.assignReviewer-inner .close-btn i{
+  font-size: 30px;
+}
+
+.assignReviewer-inner button{
+  margin-top: 15px;
+  padding: 12px 20px;
+  text-align: center;
+  color:white;
+  background-color: #f67280;
+  border-radius: 5px;
+}
+
+.assignReviewer-inner button:hover{
+  color:white;
+  background-color: #C25964;
+}
+
+.assignReviewer-inner th {
+  font-size: 17px;
+}
+
+/* -----------------------
+  * Manage Editors Popup *
+-----------------------  */
+
+.manageEditorPopup {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manageEditorPopup-inner {
+  position: relative;
+  padding: 8vh 120px 0;
+  height: 550px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.manageEditorPopup-inner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  border-style: none;
+  background-color: white;
+  color: hsl(208, 40%, 30%);
+}
+
+.manageEditorPopup-inner .close-btn:hover {
+  background-color: white;
+  color:#f67280;
+}
+
+.manageEditorPopup-inner .close-btn i{
+  font-size: 30px;
+}
+
+.manageEditorPopup-inner button{
+  margin-top: 15px;
+  padding: 12px 20px;
+  text-align: center;
+  color:white;
+  background-color: #f67280;
+  border-radius: 5px;
+}
+
+.manageEditorPopup-inner button:hover{
+  color:white;
+  background-color: #C25964;
+}
+
+.manageEditorPopup-inner th {
+  font-size: 17px;
+}
+
+/* ---------------------------
+  * Field Category Assignment *
+---------------------------  */
+
+.fieldCatAssignment{
+  text-align: center;
+}
+
+.fieldCatAssignment table{
+  border-radius: 0px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* ----------------
+  * Add Field Form *
+----------------  */
+
+.fieldForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldForm-inner {
+  position: relative;
+  padding: 80px 50px;
+  width: 100%;
+  max-width: 400px;
+  height:230px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.fieldForm-inner .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border-style: none;
+}
+
+.fieldForm-inner .close-btn:hover {
+  color: #f67280;
+}
+
+.fieldForm-inner .close-btn i{
+  font-size: 20px;
+}
+
+.addFieldForm button {
+  color: white;
+  margin: 20px auto;
+  height: 40px;
+  width: 100px;
+  background-color: #f67280;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.addFieldForm button:hover {
+  background-color: #c06c84;
+}
+
+/* -------------------
+  * Add Category Form *
+-------------------- */
+
+.addCategoryForm{
+  margin: 30px auto 0;
+  background-color: white;
+  padding: 5px;
+}
+
+.addCategoryForm button{
+  font-size: 16px;
+  color: white;
+  margin: 20px auto;
+  height: 40px;
+  width: 100px;
+  background-color: #f67280;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 500;
+}
+
+.addCategoryForm button:hover {
+  background-color: #c06c84;
+}
+
+/* --------------
+  * View Article *
+--------------  */
+
+.viewArticle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewArticle-inner {
+  position: relative;
+  padding: 5vh 50px 0;
+  width: 100%;
+  max-width: 850px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.viewArticle-inner table{
+  font-size: 18px;
+}
+
+.viewArticle-inner .close-btn {
+  color: hsl(208, 40%, 30%);
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border-style: none;
+  background-color: white;
+}
+
+.viewArticle-inner .close-btn:hover {
+  color: #f67280;
+}
+
+.viewArticle-inner .close-btn i{
+  font-size: 30px;
+}
+
+.viewArticle-inner .first{
+  width:30%;
+}
+
+.viewArticle-inner .second{
+  width:70%;
+}
+
+.viewArticle-inner .editButton{
+  border-style: none;
+  background: none;
+  color:#f67280;
+}
+
+.viewArticle-inner .editButton:hover{
+  color:#c06c84;
+}
+
+/* ------------
+  * View Notes *
+------------  */
+
+.viewNotes {
+  font-size:12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewNotes-inner {
+  font-size:12px;
+  position: relative;
+  padding: 3vh 20px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.viewNotes-inner h6{
+  color: #355c7d;
+  font-size: 16px;
+}
+
+.viewNotes-inner p{
+  font-size: 12px;
+}
+
+.viewNotes-inner .close-btn {
+  color: hsl(208, 40%, 30%);
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border-style: none;
+  background-color: white;
+}
+
+.viewNotes-inner .close-btn:hover {
+  color: #f67280;
+}
+
+.viewNotes-inner .close-btn i{
+  font-size: 20px;
+}
+
+.viewNotes-inner .first{
+  width:30%;
+}
+
+.viewNotes-inner .second{
+  width:70%;
+}
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 32%;
+  float: left;
+  padding: 20px;
+  margin: auto 3px;
+  border: 1px solid #355c7d;
+  border-radius: 5px;
+}  
+
+/* ------------
+  * Set Notes *
+------------  */
+
+.setNote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setNote-inner {
+  position: relative;
+  padding: 5vh 5vw;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.setNote-inner label{
+  font-size:16px;
+}
+
+.setNote-inner textarea{
+  font-size:14px;
+  padding:5px;
+}
+
+.setNote-inner .submitNote{
+  font-size: 16px;
+  border-style: none;
+  color:white;
+  background-color: #f67280;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.setNote-inner .submitNote:hover{
+  background-color: #c06c84;
+  color:white;
+}
+
+.setNote-inner .close-btn {
+  color: hsl(208, 40%, 30%);
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border-style: none;
+  background-color: white;
+}
+
+.setNote-inner .close-btn:hover {
+  color: #f67280;
+}
+
+.setNote-inner .close-btn i{
+  font-size: 30px;
+}
+
+/* -------------
+  * Edit Panel *
+-------------  */
+
+.editPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editPanel-inner {
+  position: relative;
+  padding: 10vh 80px 10vh;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.editPanel-inner .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  border-style: none;
+  background-color: white;
+}
+
+.editPanel-inner .close-btn:hover {
+  color: hsl(208, 40%, 30%);
+}
+
+.editPanel-inner button.save{
+  border-radius: 5px;
+  padding: 10px 15px;
+  border-style: none;
+  background-color: #f67280;
+  color: white;
+}
+
+.editPanel-inner button.save:hover{
+  color: white;
+  background-color: #c06c84;
+}
+
+.editArticlePanel{
+  font-size: 16px;
+  text-align: center;
+}
